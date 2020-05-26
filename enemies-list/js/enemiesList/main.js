@@ -1,17 +1,5 @@
 function main() {
   // Put your code here
-  console.log("My Enemies List!")
-  console.log("----------------")
-
-  for (let myEnemy of enemies) {
-    if (myEnemy.IsReallyHated)
-      {
-        console.log(`${myEnemy.IsReallyHated}${myEnemy.LastName} Really, really dislike!`)
-      }
-      else {
-        console.log(`${myEnemy.IsReallyHated}${myEnemy.LastName}`)
-      }
-  }
 
   const enemies = [
 
@@ -55,6 +43,20 @@ function main() {
     }
   ];
 
+  console.log("My Enemies List!")
+  console.log("----------------")
+
+  for (let myEnemy of enemies) {
+    if (myEnemy.IsReallyHated)
+      {
+        console.log(`${myEnemy.FirstName} ${myEnemy.LastName} (Really, really dislike!)`)
+      }
+      else {
+        console.log(`${myEnemy.FirstName} ${myEnemy.LastName}`)
+      }
+  }
+
+ 
 
 }
 
